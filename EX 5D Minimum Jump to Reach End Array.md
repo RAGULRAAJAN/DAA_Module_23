@@ -1,19 +1,24 @@
-EX 5D Minimum Jump to Reach End Array
-DATE:
-AIM:
+# EX 5D Minimum Jump to Reach End Array
+## DATE:
+## AIM:
 To write a python program for finding the minimum number of jumps needed to reach end of the array using Dynamic Programming.
 
-Algorithm
-If the first element is 0 or the array is empty, return infinity because you can't move.
-Create an array jumps where each element represents the minimum jumps needed to reach that position.
-For each position, check if you can jump from any previous position that can reach it and update the jumps accordingly.
-For each valid jump, keep track of the minimum jumps needed.
-Return the minimum number of jumps to reach the last position.
-Program:
+
+## Algorithm
+1. If the first element is 0 or the array is empty, return infinity because you can't move.
+2. Create an array jumps where each element represents the minimum jumps needed to reach that position.
+3. For each position, check if you can jump from any previous position that can reach it and update the jumps accordingly.
+4. For each valid jump, keep track of the minimum jumps needed.
+5. Return the minimum number of jumps to reach the last position. 
+
+## Program:
+```
 /*
-Developed by: RAGUL RAAJAN T
-Register Number: 212223100043
+Developed by: Dinesh Karthick K J
+Register Number: 212222100011
 */
+```
+```
 def minJumps(arr, n):
     jumps = [0 for i in range(n)]
     if (n == 0) or (arr[0] == 0):
